@@ -1,0 +1,72 @@
+﻿@page
+@model Sunny_School.Pages.Info_Alumno.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2 class="text-info">Agregar Nuevo Alumno</h2>
+<br />
+<body>
+    <div style="border: 10px solid bisque">
+        <div style="background-color:bisque ; height:180px">
+
+            <form method="post">
+                <div asp-validation-sumary="ModelOnly" class="text-danger"></div>
+
+                <div style="border:1px solid palevioletred; margin:7px">
+                    <div style="background-color:palevioletred; height:40px">
+                        <div class="text-center">
+
+                            <div class="form-group">
+                                <div style="color: black">
+                                    <h3 class="text-center">Datos del Beneficiario</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div style="border:1px solid dodgerblue; margin:7px">
+                <div style="background-color: dodgerblue; height: 30px">
+                    <div style="color: black">
+                        <div class="text-left">Nombre: </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid" id="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                            <div style="border:1px solid dodgerblue">
+                                <div style="background-color:dodgerblue; height:30px">
+                                    <div style="color: black">
+                                        <div class="text-left">Nacionalidad: </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div style="border:1px solid dodgerblue">
+                                <div style="background-color:dodgerblue; height:30px">
+                                    <div style="color: black">
+                                        <div class="text-left">C.U.R.P: </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+   
+</body>
