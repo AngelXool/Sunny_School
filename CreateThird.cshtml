@@ -1,0 +1,89 @@
+﻿@page
+@model Sunny_School.Pages.NewFolder.CreateThirdModel
+@{
+    ViewData["Title"] = "CreateThird";
+}
+
+<h2 class="text-info">Agregar Nuevo Alumno</h2>
+<br />
+<body>
+
+    <div class="container" style="background-color:aqua">
+        <div style="border:1px solid palevioletred; margin:7px">
+            <div style="background-color:palevioletred; height:40px">
+                <div class="text-center">
+
+                    <div class="form-group">
+                        <div style="color: black">
+                            <h3 class="text-center">Datos del Beneficiario</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+            <label asp-for="Enlace3.Nombretutor"></label>
+            <input asp-for="Enlace3.Nombretutor" class="form-control" />
+        </form>
+
+
+        <br />
+        <div class="container-fluid" id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form method="post">
+                            <label asp-for="Enlace3.CURP"></label>
+                            <input asp-for="Enlace3.CURP" class="form-control" />
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form method="post">
+                            <label asp-for="Enlace3.Nacionalidad"></label>
+                            <input asp-for="Enlace3.Nacionalidad" class="form-control" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container-fluid" id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form method="post">
+                            <label asp-for="Enlace3.Fecha_Nacimineto"></label>
+                            <input asp-for="Enlace3.Fecha_Nacimineto" class="form-control" />
+                        </form>
+                    </div>
+                    <br />
+                    <div class="col">
+                        <form method="post">
+                            <label asp-for="Enlace3.Ocupacion"></label>
+                            <input asp-for="Enlace3.Ocupacion" class="form-control" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+            <label asp-for="Enlace3.NombreMom"></label>
+            <input asp-for="Enlace3.NombreMom" class="form-control" />
+        </form>
+
+        <br />
+
+        <form method="post">
+            <label asp-for="Enlace3.Ingresos"></label>
+            <input asp-for="Enlace3.Ingresos" class="form-control" />
+        </form>
+        <a class="nav-link text-black-50" asp-area="" asp-page="/Info_Alumno/Index">Salir</a>
+        <div class="col-6 text-xl-right">
+            <a asp-page="/Info_Familiar/CreateThird" class="btn btn-primary">Guardar</a>
+        </div>
+    </div>
+</body>
+
