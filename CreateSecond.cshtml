@@ -1,0 +1,66 @@
+﻿@page
+@model Sunny_School.Pages.Info_Escolar.CreateSecondModel
+@{
+    ViewData["Title"] = "CreateSecond";
+}
+
+<h2 class="text-info">Agregar Nuevo Alumno</h2>
+<br />
+<body>
+
+    <div class="container" style="background-color:aqua">
+        <div style="border:1px solid palevioletred; margin:7px">
+            <div style="background-color:palevioletred; height:40px">
+                <div class="text-center">
+
+                    <div class="form-group">
+                        <div style="color: black">
+                            <h3 class="text-center">Datos del Academicos</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+            <label asp-for="Enlace2.Nombre"></label>
+            <input asp-for="Enlace2.Nombre" class="form-control" />
+        </form>
+
+
+        <br />
+        <div class="container-fluid" id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form method="post">
+                            <label asp-for="Enlace2.Nivel"></label>
+                            <select asp-for="Enlace2.Nivel">
+                                <option value="Primaria">Primaria</option>
+                                <option value="Secundaria" selected>Secundaria</option>
+                                <option value="Preparatoria">Preparatoria</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form method="post">
+                            <label asp-for="Enlace2.Grado"></label>
+                            <select asp-for="Enlace2.Grado">
+                                <option value="Primero">Primero</option>
+                                <option value="Segundo" selected>Segundo</option>
+                                <option value="Trercero">Trercero</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <a class="nav-link text-black-50" asp-area="" asp-page="/Info_Alumno/Index">Salir</a>
+        <div class="col-6 text-xl-right">
+            <a asp-page="/Info_Familiar/CreateThird" class="btn btn-primary">Siguente</a>
+        </div>
+    </div>_
+</body>
+
